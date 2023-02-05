@@ -1,0 +1,6 @@
+<h1>ツイートする</h1>
+<%= form_with model: @tweet do |f| %>
+  <td><%= f.text_field :tweet %></td>
+  <td><%= f.file_field :image, accept: "image/*" %></td>
+  <td><%= f.submit 'ツイートする' %></td>
+<% end %>

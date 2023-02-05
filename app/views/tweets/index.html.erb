@@ -1,0 +1,7 @@
+<% @tweet.each do |tweet| %>
+<div>
+  <p><%= tweet.user.name %></p>
+  <p><%= tweet.tweet %></p>
+  <%= image_tag tweet.get_image %>
+</div>
+<% end %>
